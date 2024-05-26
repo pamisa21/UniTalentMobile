@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logintop1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginbottom"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="40dp"
+        android:id="@+id/rl_form"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello there, CMUans!"
+            android:textColor="@color/white"
+            android:id="@+id/txt_Greetings"
+            android:fontFamily="sans-serif-light"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:id="@+id/txt_Login"
+            android:fontFamily="sans-serif-black"
+            android:textSize="35dp"
+            android:layout_below="@id/txt_Greetings"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Continue"
+            android:textColor="@color/white"
+            android:id="@+id/txt_Continue"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@id/txt_Login"
+            android:textSize="18dp"
+            />
+
+
+        <EditText
+            android:id="@+id/edt_Ins_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/white"
+            android:hint="Institutional Email"
+            android:textColorHint="@color/light_grey"
+            android:layout_below="@id/txt_Continue"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/edt_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/white"
+            android:hint="Password"
+            android:textColorHint="@color/light_grey"
+            android:layout_below="@id/edt_Ins_Email"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_below="@id/edt_Password"
+            android:background="@color/muted_green"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:id="@+id/btn_Login"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go Back"
+            android:layout_below="@id/btn_Login"
+            android:background="@color/muted_green"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btn_GoBack"
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/progress_bar"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:paddingHorizontal="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="20dp"
+        />
+
+</RelativeLayout>

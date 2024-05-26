@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981508152379",
+    "project_id": "unitalent-v3",
+    "storage_bucket": "unitalent-v3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981508152379:android:40ee44098b96245884101e",
+        "android_client_info": {
+          "package_name": "com.example.unitalentv3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKicQldONDTUXx9O1YiowPXVstZxuvtsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

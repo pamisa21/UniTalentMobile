@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/edited1"
+        android:id="@+id/img_first"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/img_first"
+        android:layout_marginTop="25dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtWelcome"
+                android:text="Welcome to "
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UniTalent!"
+                android:textColor="#F12D89"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:text="A platform for CMUans to showcase their talents to the world. Join us and discover talented CMUans!"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtDescription"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDescription"
+            android:text="Access platform as:"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/txtAccess"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CMU Student"
+            android:layout_below="@id/txtAccess"
+            android:background="@color/muted_green"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_CMU_Student"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guest"
+            android:layout_below="@id/btn_CMU_Student"
+            android:background="@color/muted_green"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_Guest"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/progress_bar"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:paddingHorizontal="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="20dp"
+        />
+
+
+</RelativeLayout>

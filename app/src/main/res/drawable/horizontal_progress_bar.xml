@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000" /> <!-- Transparent background -->
+        </shape>
+    </item>
+    <!-- Progress -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#45D5C7" /> <!-- Color when loaded -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/light_grey"
+    android:paddingHorizontal="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txtDiscover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25dp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabLayout"
+            android:background="@color/light_grey">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_item_arts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arts"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_item_poem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poem"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_item_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewPager"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

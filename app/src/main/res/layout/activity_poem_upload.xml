@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".formUpload"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Upload Poem"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:textColorHint="@color/dark_grey"
+        android:backgroundTint="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/dark_grey"
+        android:backgroundTint="@color/black"
+        android:hint="Upload By" />
+
+    <EditText
+        android:id="@+id/editPoem"
+        android:layout_width="wrap_content"
+        android:layout_height="369dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Write your poem here..."
+        android:inputType="textMultiLine" />/>
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Upload" />
+
+
+</LinearLayout>

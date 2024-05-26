@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="@color/light_grey"
+    android:paddingHorizontal="25dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlProfile"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25dp"
+            android:id="@+id/Profile"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_account_circle_100"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="40dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_person_outline_36"
+                android:id="@+id/imgName"
+                android:layout_marginVertical="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNameHolder"
+                android:layout_toRightOf="@+id/imgName"
+                android:text="Student"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_marginVertical="20dp"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_numbers_36"
+                android:id="@+id/imgPassword"
+                android:layout_below="@id/imgName"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNameHolder"
+                android:layout_toRightOf="@id/imgEmail"
+                android:text="ID: **********"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_marginVertical="15dp"
+                android:textSize="15dp"
+                android:id="@+id/txtID"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_mail_outline_36"
+                android:id="@+id/imgEmail"
+                android:layout_below="@id/imgPassword"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtID"
+                android:layout_toRightOf="@+id/imgEmail"
+                android:text="Email"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_marginVertical="20dp"
+                android:textSize="15dp"
+                android:id="@+id/txtEmail"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_school_36"
+                android:id="@+id/imgSchool"
+                android:layout_below="@+id/imgEmail"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEmail"
+                android:layout_toRightOf="@+id/imgSchool"
+                android:text="School"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_marginVertical="15dp"
+                android:textSize="15dp"
+                android:id="@+id/txtSchool"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+</FrameLayout>
